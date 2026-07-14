@@ -17,23 +17,23 @@ FROM ecommerce_funnel
 GROUP BY event_type 
 ORDER BY total_events DESC;
 SELECT 
-SUM(event_type = 'view') AS views, 
-SUM(event_type = 'cart') AS carts, 
-SUM(event_type = 'checkout') AS checkouts, 
-SUM(event_type = 'purchase') AS purchases 
+    SUM(event_type = 'view') AS views, 
+    SUM(event_type = 'cart') AS carts, 
+    SUM(event_type = 'checkout') AS checkouts, 
+    SUM(event_type = 'purchase') AS purchases 
 FROM ecommerce_funnel;
 SHOW COLUMNS FROM ecommerce_funnel;
 WITH funnel AS( SELECT 
-SUM(event_type = 'view') AS views, 
-SUM(event_type = 'cart') AS carts, 
-SUM(event_type = 'checkout') AS checkouts, 
-SUM(event_type = 'purchase') AS purchases 
+    SUM(event_type = 'view') AS views, 
+    SUM(event_type = 'cart') AS carts, 
+    SUM(event_type = 'checkout') AS checkouts, 
+    SUM(event_type = 'purchase') AS purchases 
 FROM ecommerce_funnel)
 SELECT views, carts, checkouts, purchases, 
-ROUND(carts / views * 100, 2) AS view_to_cart_rate, 
-ROUND(checkouts / carts * 100, 2) AS cart_to_checkout_rate, 
-ROUND(purchases / checkouts * 100, 2) AS checkout_to_purchase_rate, 
-ROUND(purchases / views * 100, 2) AS overall_conversion_rate
+    ROUND(carts / views * 100, 2) AS view_to_cart_rate, 
+    ROUND(checkouts / carts * 100, 2) AS cart_to_checkout_rate, 
+    ROUND(purchases / checkouts * 100, 2) AS checkout_to_purchase_rate, 
+    ROUND(purchases / views * 100, 2) AS overall_conversion_rate
 FROM funnel;
 SELECT
     device,
