@@ -1,13 +1,16 @@
 **E‑commerce Funnel Analytics Dashboard**
+
 A complete end‑to‑end data analytics project using Power BI, Power Query, and DAX to analyze user behaviour across an e‑commerce funnel — from product views to final purchases.
 
 **📌 Project Overview**
+
 This project explores how users move through an online shopping funnel.
 It identifies drop‑off points, device behaviour, country trends, product performance, and revenue insights.
 
 The dashboard is divided into three pages:
 
 1️⃣ Funnel Overview
+
 -Funnel chart (View → Cart → Checkout → Purchase)
 
 -KPI cards: Views, Carts, Checkouts, Purchases, Total Revenue
@@ -19,6 +22,7 @@ The dashboard is divided into three pages:
 -Daily Activity Trend
 
 2️⃣ Product & Category Insights
+
 -Purchases by Category
 
 -Revenue by Category
@@ -30,6 +34,7 @@ The dashboard is divided into three pages:
 -Top 10 Products (Purchases + Revenue)
 
 3️⃣ Time & Behaviour Analysis
+
 -Hourly Activity
 
 -Monthly Activity
@@ -41,6 +46,7 @@ The dashboard is divided into three pages:
 -Slicers for device, country, category, brand
 
 **📊 Dataset**
+
 The dataset contains simulated e‑commerce events with fields such as:
 
 -event_type (view, cart, checkout, purchase)
@@ -60,6 +66,7 @@ The dataset contains simulated e‑commerce events with fields such as:
 -price
 
 **🛠️ Tools & Skills Used**
+
 -Power BI (Data modelling, DAX, visuals)
 
 -Power Query (Cleaning & transformations)
@@ -69,6 +76,7 @@ The dataset contains simulated e‑commerce events with fields such as:
 -Data storytelling & dashboard design
 
 **🎯 Insights Delivered**
+
 -Funnel conversion performance
 
 -Device‑based behaviour differences
